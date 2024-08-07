@@ -25,7 +25,7 @@ export const startBot = () => {
         };
 
         try {
-            const response = await axios.post('http://localhost:5500/auth/telegram', {
+            const response = await axios.post('https://twaback.onrender.com/auth/telegram', {
                 user: userData,
                 start_param: referrerId
             });
